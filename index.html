@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Mix | Tudo para Festas</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color: #333;
+}
+
+header {
+    background: #ff1493;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.hero-media {
+    margin-top: 20px;
+}
+
+.hero-media img,
+.hero-media video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff1493;
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section h2 {
+    color: #ff1493;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card p {
+    font-size: 16px;
+}
+
+.form-box {
+    background: #ffe4f2;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+}
+
+.form-box h3 {
+    color: #ff1493;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background: #ff1493;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    background: #ff1493;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* BOTÃO WHATSAPP FIXO */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff1493;
+    color: #fff;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 65px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 1000;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>New Mix</h1>
+    <p>Tudo para festas, papelaria fofa e presentes criativos</p>
+
+    <div class="hero-media">
+        <!-- TROQUE A IMAGEM OU INSIRA UM VÍDEO -->
+        <img src="newmix.jpg" alt="New Mix">
+    </div>
+
+    <a class="btn" href="https://wa.me/556493476073" target="_blank">
+        Comprar pelo WhatsApp
+    </a>
+</header>
+
+<section class="section">
+    <h2>🛍️ Loja New Mix</h2>
+
+    <div class="cards">
+        <div class="card">
+            <p>🎈 Artigos para festas</p>
+        </div>
+        <div class="card">
+            <p>📒 Papelaria fofa</p>
+        </div>
+        <div class="card">
+            <p>☕ Canecas e presentes criativos</p>
+        </div>
+        <div class="card">
+            <p>🎁 Itens personalizados</p>
+        </div>
+    </div>
+
+    <div class="form-box">
+        <h3>Pedido de Produtos</h3>
+        <form>
+            <input type="text" placeholder="Seu nome">
+            <input type="tel" placeholder="WhatsApp">
+            <input type="text" placeholder="Produto desejado">
+            <textarea placeholder="Mensagem"></textarea>
+            <button type="button" onclick="window.open('https://wa.me/556493476073')">
+                Enviar Pedido
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="section">
+    <h2>🎉 Espaço Mix – Locação</h2>
+
+    <p style="text-align:center;font-size:18px;">
+        Um espaço perfeito para aniversários, confraternizações e momentos especiais.
+    </p>
+
+    <div class="form-box">
+        <h3>Solicitar Orçamento</h3>
+        <form>
+            <input type="text" placeholder="Seu nome">
+            <input type="tel" placeholder="WhatsApp">
+            <input type="date">
+            <input type="text" placeholder="Tipo de evento">
+            <input type="number" placeholder="Quantidade de pessoas">
+            <button type="button" onclick="window.open('https://wa.me/556493476073')">
+                Consultar Disponibilidade
+            </button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p><strong>New Mix</strong></p>
+    <p>Tudo para festas e papelaria fofa</p>
+    <p>📲 WhatsApp: (64) 93476-073</p>
+</footer>
+
+<!-- BOTÃO WHATSAPP -->
+<a href="https://wa.me/556493476073" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
